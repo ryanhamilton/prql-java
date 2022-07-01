@@ -15,7 +15,13 @@
 [package]
 name = "prql4j"
 version = "0.1.0"
+description = "prql for java"
+license = "Apache-2.0"
+homepage = "https://github.com/doki23/prql-java/"
+repository = "https://github.com/doki23/prql-java/"
+readme = "README.md"
 edition = "2021"
+keywords = [ "prql", "sql" ]
 
 [lib]
 crate_type = ["cdylib"]
