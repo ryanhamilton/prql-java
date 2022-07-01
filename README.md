@@ -1,4 +1,4 @@
 # prql-java
-prql for java
+[prql](https://github.com/prql/prql) for java
 
 still work in progress
