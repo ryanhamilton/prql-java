@@ -1,0 +1,25 @@
+name: prql-java-test
+on:
+  pull_request:
+    types: [ opened, reopened, synchronize, labeled ]
+  push:
+    branches:
+      - main
+jobs:
+  ubuntu-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+          default: true
+      - name: Maven test
+        run: cd ./java-api && ./mvnw test
+#  macos-test:
+#    runs-on: macos-latest
+#  windows-test:
+#    runs-on: windows-latest
