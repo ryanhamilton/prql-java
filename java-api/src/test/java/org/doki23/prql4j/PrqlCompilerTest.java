@@ -23,6 +23,6 @@ public class PrqlCompilerTest {
                 "  table.*\n" +
                 "FROM\n" +
                 "  table";
-       assert sql.equalsIgnoreCase(PrqlCompiler.toSql("from table"));
+        assert sql.equalsIgnoreCase(PrqlCompiler.toSql("from table"));
     }
 }
