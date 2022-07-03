@@ -25,3 +25,5 @@ Cargo.lock
 .idea/
 
 target
+
+java-api/src/main/resources/libprql4j*
