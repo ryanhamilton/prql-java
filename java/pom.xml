@@ -52,12 +52,14 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>native_lib_build.sh</executable>
+                            <executable>build.sh</executable>
+                            <arguments>
+                                <argument>${project.basedir}</argument>
+                            </arguments>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
-
 </project>
