@@ -1,9 +1,6 @@
 name: prql-java-test
 
-on:
-  push:
-  pull_request:
-    types: [ opened, reopened, synchronize, labeled ]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   junit-test:
